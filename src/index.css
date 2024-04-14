@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-auth {
+   background-image: url("/src/assets/AuthBG.jpg");
+}
+
+.tooltip {
+   @apply absolute bottom-full left-1/2 -translate-x-1/2 lg:top-5 lg:bottom-auto lg:left-full lg:translate-x-0 lg:ml-2;
+}
+
+.tooltip::after {
+   content: "";
+   @apply absolute top-full left-1/2 lg:top-4 lg:left-0 border-8 border-transparent lg:border-transparent border-t-gray-400 lg:border-r-gray-400 -ml-2 lg:-ml-4 z-10;
+}
+
 .slide {
    text-align: center;
    height: 320px;
