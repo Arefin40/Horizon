@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.slide {
+   text-align: center;
+   height: 320px;
+   line-height: 320px;
+   background: #364d79;
+   overflow: hidden;
+}
+
+.swiper-pagination-bullet-active {
+   @apply bg-primary-500;
+}
+.swiper-button-next {
+   @apply after:content-['next'];
+}
