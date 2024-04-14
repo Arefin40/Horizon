@@ -1,0 +1,104 @@
+[
+   {
+      "id": "1",
+      "image": "https://i.ibb.co/8ck7yBg/1520249137.jpg",
+      "estate_title": "Luxury Penthouse with Panoramic Views",
+      "segment_name": "Penthouse",
+      "description": "Experience ultimate luxury living in this stunning penthouse boasting breathtaking panoramic views of the city skyline. The epitome of elegance and sophistication.",
+      "price": 6500000,
+      "status": "sale",
+      "area": "1 acre",
+      "bedrooms": 6,
+      "bathrooms": 5,
+      "location": "482 Northwest Ave, Brooklyn, NY",
+      "facilities": [
+         "wifi",
+         "Private Terrace",
+         "spa",
+         "Concierge Service",
+         "parking"
+      ]
+   },
+   {
+      "id": "2",
+      "estate_title": "Secluded Beachfront Retreat",
+      "image": "https://i.ibb.co/FqLYg8b/2151302631.jpg",
+      "segment_name": "Beachfront Property",
+      "description": "Escape to this exclusive beachfront property offering unparalleled privacy and serenity. Enjoy direct access to pristine sandy beaches and azure waters.",
+      "price": 75000,
+      "status": "rent",
+      "area": "2400 sqft",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "location": "726 Ocean View Drive, Malibu, CA",
+      "facilities": [
+         "wifi",
+         "Private Beach Access",
+         "pool",
+         "tennis",
+         "outdoor-kitchen"
+      ]
+   },
+   {
+      "id": "3",
+      "estate_title": "Exquisite Resort",
+      "image": "https://i.ibb.co/G5ffj8w/2150788008.jpg",
+      "segment_name": "Resort",
+      "description": "Indulge in resort-style living at its finest. This luxurious property offers an array of amenities and services ensuring a pampered and leisurely lifestyle.",
+      "price": 1000000,
+      "status": "rent",
+      "area": "10 Bigha",
+      "bedrooms": 120,
+      "bathrooms": 135,
+      "location": "312 Palm Resort Blvd, Orlando, FL",
+      "facilities": ["wifi", "golf-course", "spa", "kids-playground"]
+   },
+   {
+      "id": "4",
+      "estate_title": "Emerald Isle Sanctuary",
+      "image": "https://i.ibb.co/kxPS1qp/7638631066.jpg",
+      "segment_name": "Private Island",
+      "description": "Own your private slice of paradise on this pristine island retreat. Surrounded by turquoise waters and lush vegetation, experience ultimate seclusion and luxury.",
+      "price": 1500000,
+      "status": "rent",
+      "area": "20 acres",
+      "bedrooms": 8,
+      "bathrooms": 10,
+      "location": "Cascade Cove, Florida Keys, FL",
+      "facilities": ["wifi", "helipad"]
+   },
+   {
+      "id": "5",
+      "estate_title": "Colonial Villa Aurora",
+      "image": "https://i.ibb.co/qjv5fd3/2203920988.jpg",
+      "segment_name": "Villa",
+      "description": "Find tranquility and luxury in this serene villa available for rent. Surrounded by lush gardens and offering luxurious amenities, it's the perfect escape.",
+      "price": 120000,
+      "status": "rent",
+      "area": "5000 sqft",
+      "bedrooms": 15,
+      "bathrooms": 10,
+      "location": "621 Garden Retreat, Miami, FL",
+      "facilities": [
+         "wifi",
+         "pool",
+         "outdoor-kitchen",
+         "Gated Entry",
+         "room-service"
+      ]
+   },
+   {
+      "id": "6",
+      "estate_title": "Royal Crest Manor",
+      "image": "https://i.ibb.co/HNwqCX4/5403651192.jpg",
+      "segment_name": "Mansion",
+      "description": "Step into luxury with this majestic mansion estate. Boasting grandeur and opulence at every turn, experience a lifestyle of unparalleled splendor.",
+      "price": 15000000,
+      "status": "sale",
+      "area": "1 acre",
+      "bedrooms": 12,
+      "bathrooms": 15,
+      "location": "500 Magnolia Lane, Newport, RI",
+      "facilities": ["wifi", "library", "tennis", "spa", "guestroom"]
+   }
+]

@@ -1,9 +1,12 @@
-import HeroSection from "@containers/HeroSection";
 import { useRef } from "react";
+import { useLoaderData } from "react-router-dom";
+import HeroSection from "@containers/HeroSection";
+import EstateCard from "@containers/EstateCard";
 
 export default () => {
    document.title = "Horizon";
    const estateSectionRef = useRef();
+   const realEstateData = useLoaderData();
 
    return (
       <>
@@ -20,7 +23,11 @@ export default () => {
                </p>
             </header>
 
-            <main className="flex items-center justify-center">Content</main>
+            <main className="grid lg:grid-cols-3 gap-x-8 gap-y-10 sm:gap-y-16">
+               {realEstateData.map((estate) => (
+                  <EstateCard key={estate.id} data={estate} showBookmarkBtn />
+               ))}
+            </main>
          </section>
       </>
    );
