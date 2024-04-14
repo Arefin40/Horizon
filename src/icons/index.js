@@ -1,0 +1,34 @@
+export { default as Facebook } from "./Facebook";
+export { default as Google } from "./Google";
+export { default as Twitter } from "./Twitter";
+export { default as Instagram } from "./Instagram";
+export { default as Github } from "./Github";
+
+export { default as Account } from "./Account";
+export { default as Search } from "./Search";
+export { default as Menu } from "./Menu";
+export { default as Cross } from "./Cross";
+export { default as Time } from "./Time";
+export { default as Eye } from "./Eye";
+export { default as Lock } from "./Lock";
+export { default as Mail } from "./Mail";
+
+export { default as HorizonLogo } from "./HorizonLogo";
+export { default as Bathroom } from "./Bathroom";
+export { default as Bedroom } from "./Bedroom";
+export { default as Area } from "./Area";
+export { default as WiFi } from "./WiFi";
+export { default as Swimming } from "./Swimming";
+export { default as Fitness } from "./Fitness";
+export { default as Library } from "./Library";
+export { default as Tennis } from "./Tennis";
+export { default as Spa } from "./Spa";
+export { default as Guestroom } from "./Guestroom";
+export { default as Campfire } from "./Campfire";
+export { default as RoomService } from "./RoomService";
+export { default as Parking } from "./Parking";
+export { default as Helipad } from "./Helipad";
+export { default as GolfCourse } from "./GolfCourse";
+export { default as Playground } from "./Playground";
+export { default as LogOut } from "./LogOut";
+export { default as Bookmark } from "./Bookmark";
