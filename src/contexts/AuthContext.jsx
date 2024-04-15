@@ -52,6 +52,17 @@ export const AuthProvider = ({ children }) => {
       }
    };
 
+   const updateUserProfile = async ({ displayName, photoURL }) => {
+      setIsAuthenticating(true);
+      try {
+         await updateProfile(currentUser, { displayName, photoURL });
+         location.reload();
+         toast.success("Profile updated successfully");
+      } catch (error) {
+         toast.error(formattedErrorMessage(error.message));
+      }
+   };
+
    const signInWithProvider = (authProvider, callbackFunction) => async (e) => {
       e.preventDefault();
       setIsAuthenticating(true);
@@ -99,6 +110,7 @@ export const AuthProvider = ({ children }) => {
       currentUser,
       isAuthenticating,
       createAccount,
+      updateUserProfile,
       signInWithProvider,
       signInWithEmail: logIn,
       signOut: logOut,

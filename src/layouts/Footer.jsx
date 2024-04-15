@@ -9,6 +9,7 @@ export default () => {
 
          <ul className="grid grid-cols-2 lg:flex items-center gap-6 lg:gap-x-12 text-sm">
             <Link to="/">Home</Link>
+            <Link to="/update-profile">Profile</Link>
             <Link to="/saved-properties">Saved Properties</Link>
             <Link to="/contact">Contact us</Link>
             <Link to="/login">Login</Link>
@@ -22,7 +23,9 @@ export default () => {
             <Github />
          </div>
 
-         <small className="text-gray-500">© 2024. All rights reserved.</small>
+         <small className="text-gray-500">
+            © 2024 Horizon.com. All rights reserved.
+         </small>
       </section>
    );
 };

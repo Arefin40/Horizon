@@ -6,6 +6,7 @@ import ErrorPage from "@pages/ErrorPage";
 import Register from "@pages/Register";
 import Login from "@pages/Login";
 import Home from "@pages/Home";
+import Profile from "@pages/Profile";
 import EstateDetails from "@pages/EstateDetails";
 import SavedProperties from "@pages/SavedProperties";
 import Contact from "@pages/Contact";
@@ -29,6 +30,14 @@ const router = createBrowserRouter([
                </PrivateRoute>
             ),
             loader: () => fetch("/real_estate.json"),
+         },
+         {
+            path: "/update-profile",
+            element: (
+               <PrivateRoute>
+                  <Profile />
+               </PrivateRoute>
+            ),
          },
          {
             path: "/saved-properties",

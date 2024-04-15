@@ -15,6 +15,10 @@ const navigations = [
       title: "Home",
    },
    {
+      path: "/update-profile",
+      title: "Profile",
+   },
+   {
       path: "/saved-properties",
       title: "Saved Properties",
    },
