@@ -9,6 +9,7 @@ export default () => {
 
          <ul className="grid grid-cols-2 lg:flex items-center gap-6 lg:gap-x-12 text-sm">
             <Link to="/">Home</Link>
+            <Link to="/saved-properties">Saved Properties</Link>
             <Link to="/contact">Contact us</Link>
             <Link to="/login">Login</Link>
             <Link to="/register">Register</Link>

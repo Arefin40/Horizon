@@ -15,6 +15,10 @@ const navigations = [
       title: "Home",
    },
    {
+      path: "/saved-properties",
+      title: "Saved Properties",
+   },
+   {
       path: "/contact",
       title: "Contact us",
    },

@@ -29,3 +29,15 @@
 .swiper-button-next {
    @apply after:content-['next'];
 }
+
+.bookmarked {
+   @apply bg-primary-50 text-primary-500;
+}
+
+.bookmarked .bookmark-icon {
+   @apply animate-scale-bounce;
+}
+
+.bookmarked .bookmark-icon path {
+   @apply fill-current;
+}

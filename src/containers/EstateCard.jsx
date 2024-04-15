@@ -1,9 +1,22 @@
+import { useRef } from "react";
 import { Link } from "react-router-dom";
-import { Area, Bathroom, Bedroom } from "@icons";
+import { Area, Bathroom, Bedroom, Bookmark } from "@icons";
+import {
+   toggleIdInSavedData,
+   isSavedInLocalStorage,
+} from "@utils/localStorageData";
 import CompactNumber from "@utils/CompactNumber";
 import Button from "@components/Button";
 
-export default ({ data }) => {
+export default ({ data, showBookmarkBtn = false }) => {
+   const bookmarkBtnRef = useRef();
+
+   const toggleBookmark = () => {
+      toggleIdInSavedData(data.id)
+         ? bookmarkBtnRef.current.classList.remove("bookmarked")
+         : bookmarkBtnRef.current.classList.add("bookmarked");
+   };
+
    return (
       <article
          data-aos="fade-up"
@@ -43,6 +56,18 @@ export default ({ data }) => {
                         View details
                      </Button>
                   </Link>
+
+                  {showBookmarkBtn && (
+                     <button
+                        ref={bookmarkBtnRef}
+                        onClick={toggleBookmark}
+                        className={`w-12 h-12 flex items-center justify-center rounded-full bg-gray-50 ${
+                           isSavedInLocalStorage(data.id) ? "bookmarked" : ""
+                        }`}
+                     >
+                        <Bookmark />
+                     </button>
+                  )}
                </div>
             </div>
             <h3 className="mt-1 sm:mt-3 sm:text-lg font-semibold leading-6 text-gray-900">
