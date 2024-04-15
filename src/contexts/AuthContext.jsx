@@ -48,7 +48,7 @@ export const AuthProvider = ({ children }) => {
          toast.success("Account created successfully");
          if (callbackFunction) callbackFunction();
       } catch (error) {
-         console.error(error);
+         toast.error(formattedErrorMessage(error.code));
       }
    };
 
@@ -59,7 +59,7 @@ export const AuthProvider = ({ children }) => {
          location.reload();
          toast.success("Profile updated successfully");
       } catch (error) {
-         toast.error(formattedErrorMessage(error.message));
+         toast.error(formattedErrorMessage(error.code));
       }
    };
 
@@ -72,8 +72,7 @@ export const AuthProvider = ({ children }) => {
          if (callbackFunction) callbackFunction();
          setTimeout(() => toast.success("Signed in successfully"), 1000);
       } catch (error) {
-         toast.error(formattedErrorMessage(error.message));
-         console.error(error);
+         toast.error(formattedErrorMessage(error.code));
       }
    };
 
@@ -84,7 +83,7 @@ export const AuthProvider = ({ children }) => {
          toast.success("Signed-in successfully");
          if (callbackFunction) callbackFunction();
       } catch (error) {
-         console.error(error);
+         toast.error(formattedErrorMessage(error.code));
       }
    };
 
