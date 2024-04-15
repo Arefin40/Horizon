@@ -7,6 +7,7 @@ import Register from "@pages/Register";
 import Login from "@pages/Login";
 import Home from "@pages/Home";
 import EstateDetails from "@pages/EstateDetails";
+import Contact from "@pages/Contact";
 
 const router = createBrowserRouter([
    {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
                </PrivateRoute>
             ),
             loader: () => fetch("/real_estate.json"),
+         },
+         {
+            path: "/contact",
+            element: <Contact />,
          },
       ],
    },
