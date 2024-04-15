@@ -11,11 +11,11 @@ export default ({ estateSectionRef }) => {
       <Swiper
          modules={[Autoplay, Pagination]}
          pagination
-         autoplay
-         className="mt-4 lg:mt-8 max-w-full lg:h-[36rem] overflow-hidden rounded-md"
+         // autoplay
+         className="mt-4 lg:mt-8 w-full max-w-full max-h-[40rem] sm:max-h-[36rem] overflow-hidden rounded-md"
       >
-         <SwiperSlide className="p-5 lg:px-12 py-6 flex flex-col lg:flex-row gap-y-10 items-center content-center lg:justify-end bg-gradient-to-b from-primary-50 to-amber-50 lg:from-white lg:to-white">
-            <div className="lg:p-12 lg:absolute inset-0 lg:bottom-24 lg:bg-gradient-to-br from-primary-50 to-amber-50 grid content-center text-center lg:text-left lg:rounded-md">
+         <SwiperSlide className="p-5 md:p-8 flex lg:grid lg:grid-cols-2 flex-col lg:flex-row gap-y-6 lg:items-center xl:flex bg-gradient-to-b from-primary-50 to-amber-50 xl:from-white xl:to-white">
+            <div className="xl:p-12 xl:absolute xl:inset-0 xl:bottom-24 grid justify-items-center lg:justify-items-start text-center lg:text-left xl:bg-gradient-to-br from-primary-50 to-amber-50 xl:rounded-md content-center">
                <p className="text-xl lg:text-2xl font-medium text-primary-600">
                   Find your luxurious dream
                </p>
@@ -36,20 +36,23 @@ export default ({ estateSectionRef }) => {
             </div>
             <img
                src="https://i.ibb.co/DY38653/2694782767.png"
-               className="relative w-full lg:w-auto lg:h-full max-w-full max-h-full object-bottom"
+               className="relative ml-auto max-h-full max-w-full"
             />
          </SwiperSlide>
 
-         <SwiperSlide className="relative flex flex-col">
-            <img src="https://i.ibb.co/qjv5fd3/2203920988.jpg" />
-            <div className="my-auto lg:absolute inset-0 lg:bg-gradient-to-b from-black/30 to-black/40 lg:text-white flex items-center justify-center">
-               <h1 className="my-3 lg:my-0 text-2xl lg:text-8xl lg:shadow-xl bg-clip-text text-center text-rose-700 lg:text-white font-serif">
+         <SwiperSlide className="relative flex flex-col h-full text-center">
+            <img
+               src="https://i.ibb.co/qjv5fd3/2203920988.jpg"
+               className="w-full h-full max-h-[50%] sm:max-h-none object-cover"
+            />
+            <div className="sm:absolute inset-0 sm:bg-gradient-to-b from-black/30 to-black/40 sm:text-white flex items-center justify-center">
+               <h1 className="py-3 md:py-0 my-automd:my-0 text-2xl sm:text-5xl lg:text-7xl xl:text-8xl text-rose-700 sm:text-white font-serif">
                   Colonial Villas
                </h1>
             </div>
             <img
                src="https://i.ibb.co/x23W3yK/2131328580.jpg"
-               className="lg:hidden"
+               className="sm:hidden max-h-[50%] object-cover"
             />
          </SwiperSlide>
 
@@ -59,7 +62,7 @@ export default ({ estateSectionRef }) => {
                className="h-full lg:h-auto rounded-md object-cover object-bottom"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/40 text-white flex items-center justify-center">
-               <h1 className="text-5xl lg:text-8xl font-extralight font-serif">
+               <h1 className="text-5xl lg:text-7xl xl:text-8xl font-serif">
                   Luxury Penthouse
                </h1>
             </div>
@@ -71,7 +74,7 @@ export default ({ estateSectionRef }) => {
                className="h-full lg:h-auto rounded-md object-cover object-bottom"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/40 text-white flex items-center justify-center">
-               <h1 className="text-5xl lg:text-8xl font-extralight font-serif">
+               <h1 className="text-5xl lg:text-7xl xl:text-8xl font-serif">
                   Resorts
                </h1>
             </div>

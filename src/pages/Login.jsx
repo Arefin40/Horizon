@@ -28,7 +28,7 @@ export default () => {
    };
 
    return (
-      <section className="relative grid gap-y-5 rounded-xl z-10">
+      <section className="w-full relative rounded-xl z-10">
          <Link to="/" className="flex items-center justify-center gap-x-2">
             <HorizonLogo className="w-10 h-10" />
             <h1 className="ml-2 font-extrabold text-2xl lg:text-4xl first-letter:text-primary-500 text-primary-700">
@@ -36,12 +36,9 @@ export default () => {
             </h1>
          </Link>
 
-         <div
-            data-aos="zoom-out-up"
-            className="grid lg:flex justify-center shadow-xl"
-         >
+         <div data-aos="zoom-out-up" className="mt-5 lg:flex justify-center">
             {/* Login Form */}
-            <div className="p-8 mx-auto max-w-lg w-full bg-white rounded-t-lg lg:rounded-none lg:rounded-l-xl flex-shrink-0">
+            <div className="p-8 mx-auto lg:mx-0 w-full max-w-lg bg-white rounded-t-lg lg:rounded-none lg:rounded-l-xl">
                <div className="mb-8 sm:mb-12 text-center">
                   <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-gray-800">
                      Login
@@ -52,7 +49,7 @@ export default () => {
                </div>
 
                <form
-                  className="grid gap-y-6"
+                  className="grid gap-y-6 w-full"
                   onSubmit={handleSubmit((data) =>
                      signInWithEmail(data, redirect)
                   )}
@@ -104,7 +101,7 @@ export default () => {
             </div>
 
             {/* Singin with Google, Facebook, Github */}
-            <div className="p-8 flex items-center justify-center backdrop-filter backdrop-blur-md bg-opacity-65 bg-white rounded-b-lg lg:rounded-none lg:rounded-r-xl flex-shrink-0 flex-grow-0">
+            <div className="p-8 mx-auto lg:mx-0 w-full max-w-lg lg:max-w-80 flex items-center justify-center backdrop-filter backdrop-blur-md bg-opacity-65 bg-white rounded-b-lg lg:rounded-none lg:rounded-r-xl">
                <div className="grid gap-y-4 gap-x-8">
                   <Button
                      startIcon={<Google />}

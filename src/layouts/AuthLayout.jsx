@@ -17,7 +17,7 @@ export default ({ children }) => {
          <div className="fixed inset-0 bg-auth bg-cover bg-center" />
          <CicularGrid />
 
-         <main className="my-6 relative p-5 w-full max-w-screen-md min-h-screen flex items-center justify-center mx-auto">
+         <main className="my-6 relative p-5 w-full min-h-screen flex justify-center items-center">
             {children}
          </main>
       </AuthProvider>

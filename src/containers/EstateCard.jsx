@@ -21,7 +21,7 @@ export default ({ data, showBookmarkBtn = false }) => {
       <article
          data-aos="fade-up"
          data-aos-anchor-placement="top-bottom"
-         className="flex max-w-xl flex-col items-start justify-between group"
+         className="flex flex-col items-start justify-between group"
       >
          <div className="relative w-full">
             <div className="relative w-full aspect-video sm:aspect-[1.5/1] rounded-2xl overflow-hidden">

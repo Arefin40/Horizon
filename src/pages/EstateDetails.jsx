@@ -28,7 +28,7 @@ export default () => {
    document.title = `Horizon  |  ${estate.estate_title}`;
 
    return (
-      <section className="my-4 lg:mb-12 grid items-start gap-y-12 lg:grid-cols-[1fr_18rem] gap-x-10">
+      <section className="my-4 lg:mb-12 grid items-start gap-y-12 xl:grid-cols-[1fr_18rem] gap-x-10">
          <section className="grid gap-y-10">
             <img
                src={estate.image}
@@ -123,7 +123,7 @@ export default () => {
                You may also like
             </h1>
 
-            <main className="grid gap-y-6">
+            <main className="grid grid-cols-[repeat(auto-fit,_minmax(20rem,1fr))] gap-6">
                {otherEstates
                   .reverse()
                   .slice(0, 3)
@@ -132,7 +132,7 @@ export default () => {
                         <article
                            data-aos="zoom-in-left"
                            data-aos-anchor-placement="top-bottom"
-                           className="relative p-5 w-full h-48 flex flex-col rounded-lg text-white overflow-hidden"
+                           className="relative p-5 w-full min-h-48 aspect-video flex flex-col rounded-lg text-white overflow-hidden"
                         >
                            <img
                               src={estate.image}

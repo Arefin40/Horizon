@@ -16,7 +16,7 @@ export default () => {
             Saved Properties
          </div>
 
-         <main className="grid lg:grid-cols-3 gap-x-8 gap-y-10 sm:gap-y-16">
+         <main className="grid grid-cols-[repeat(auto-fit,_minmax(20rem,1fr))] gap-x-8 gap-y-10 sm:gap-y-16">
             {realEstateData.map((estate) => (
                <EstateCard key={estate.id} data={estate} />
             ))}

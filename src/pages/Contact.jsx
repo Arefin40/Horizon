@@ -21,23 +21,23 @@ export default () => {
 
    const contacts = [
       {
-         title: "Collaborate",
-         email: "collaborate@horizon.com",
+         title: "Sales Inquiries",
+         email: "sales@horizon.com",
          phone: "+88 (013) 516-3582",
       },
       {
-         title: "Press",
-         email: "press@horizon.com",
+         title: "Customer Support",
+         email: "support@horizon.com",
          phone: "+88 (015) 516-3584",
       },
       {
-         title: "Join our team",
-         email: "careers@horizon.com",
+         title: "Investment Opportunities",
+         email: "invest@horizon.com",
          phone: "+88 (016) 516-3586",
       },
       {
-         title: "Say hello",
-         email: "hello@horizon.com",
+         title: "Legal Department",
+         email: "legal@horizon.com",
          phone: "+88 (018) 516-3588",
       },
    ];
