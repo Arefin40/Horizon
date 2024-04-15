@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "@layouts/Layout";
 import AuthLayout from "@layouts/AuthLayout";
+import PrivateRoute from "@layouts/PrivateRoute";
 import ErrorPage from "@pages/ErrorPage";
 import Register from "@pages/Register";
 import Login from "@pages/Login";
@@ -20,7 +21,11 @@ const router = createBrowserRouter([
          },
          {
             path: "/estate/:id",
-            element: <EstateDetails />,
+            element: (
+               <PrivateRoute>
+                  <EstateDetails />
+               </PrivateRoute>
+            ),
             loader: () => fetch("/real_estate.json"),
          },
       ],

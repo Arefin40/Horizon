@@ -34,11 +34,13 @@ const providers = {
 
 export const AuthProvider = ({ children }) => {
    const [currentUser, setCurrentUser] = useState(null);
+   const [isAuthenticating, setIsAuthenticating] = useState(true);
 
    const createAccount = async (
       { displayName, photoURL, email, password },
       callbackFunction
    ) => {
+      setIsAuthenticating(true);
       try {
          //prettier-ignore
          const userCredential = await createUserWithEmailAndPassword(auth, email, password);
@@ -52,6 +54,8 @@ export const AuthProvider = ({ children }) => {
 
    const signInWithProvider = (authProvider, callbackFunction) => async (e) => {
       e.preventDefault();
+      setIsAuthenticating(true);
+
       try {
          await signInWithPopup(auth, providers[authProvider]);
          if (callbackFunction) callbackFunction();
@@ -63,6 +67,7 @@ export const AuthProvider = ({ children }) => {
    };
 
    const logIn = async ({ email, password }, callbackFunction) => {
+      setIsAuthenticating(true);
       try {
          await signInWithEmailAndPassword(auth, email, password);
          toast.success("Signed-in successfully");
@@ -73,6 +78,7 @@ export const AuthProvider = ({ children }) => {
    };
 
    const logOut = async () => {
+      setIsAuthenticating(true);
       try {
          await signOut(auth);
          toast.success("Signed-out successfully");
@@ -84,12 +90,14 @@ export const AuthProvider = ({ children }) => {
    useEffect(() => {
       const unsubscribe = auth.onAuthStateChanged((user) => {
          setCurrentUser(user);
+         setIsAuthenticating(false);
       });
       return unsubscribe;
    }, []);
 
    const values = {
       currentUser,
+      isAuthenticating,
       createAccount,
       signInWithProvider,
       signInWithEmail: logIn,
