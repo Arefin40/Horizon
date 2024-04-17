@@ -35,6 +35,7 @@ const providers = {
 export const AuthProvider = ({ children }) => {
    const [currentUser, setCurrentUser] = useState(null);
    const [isAuthenticating, setIsAuthenticating] = useState(true);
+   const [refresh, setRefresh] = useState(false);
 
    const createAccount = async (
       { displayName, photoURL, email, password },
@@ -52,12 +53,16 @@ export const AuthProvider = ({ children }) => {
       }
    };
 
-   const updateUserProfile = async ({ displayName, photoURL }) => {
+   const updateUserProfile = async (
+      { displayName, photoURL },
+      callbackFunction
+   ) => {
       setIsAuthenticating(true);
       try {
          await updateProfile(currentUser, { displayName, photoURL });
-         location.reload();
+         setRefresh((prev) => !prev);
          toast.success("Profile updated successfully");
+         if (callbackFunction) callbackFunction(currentUser);
       } catch (error) {
          toast.error(formattedErrorMessage(error.code));
       }
@@ -103,7 +108,7 @@ export const AuthProvider = ({ children }) => {
          setIsAuthenticating(false);
       });
       return unsubscribe;
-   }, []);
+   }, [refresh]);
 
    const values = {
       currentUser,

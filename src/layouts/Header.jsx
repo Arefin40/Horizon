@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useBoolean } from "@hooks";
 import { Menu, LogOut } from "@icons";
 import { useAuth } from "@contexts/AuthContext";
@@ -81,12 +81,14 @@ export default () => {
                            title={currentUser?.displayName}
                            position="bottom"
                         >
-                           <Avatar
-                              size="w-10 h-10"
-                              className="rounded-full font-semibold bg-primary-500 text-white border"
-                              src={currentUser?.photoURL}
-                              alt={currentUser?.displayName}
-                           />
+                           <Link to="/update-profile">
+                              <Avatar
+                                 size="w-10 h-10"
+                                 className="rounded-full font-semibold bg-primary-500 text-white border"
+                                 src={currentUser?.photoURL}
+                                 alt={currentUser?.displayName}
+                              />
+                           </Link>
                         </Tooltip>
 
                         <Tooltip title="Log out" position="bottom">

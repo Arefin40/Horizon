@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 /**
  * Avatar component
@@ -22,6 +22,10 @@ export default ({
    alt = "",
 }) => {
    const [imgSrc, setImgSrc] = useState(src);
+
+   useEffect(() => {
+      if (src) setImgSrc(src);
+   }, [src]);
 
    /** Fallback function to handle image loading failure. */
    const fallback = () => setImgSrc(null);

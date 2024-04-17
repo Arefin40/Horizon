@@ -10,6 +10,7 @@ export default () => {
    const {
       register,
       handleSubmit,
+      reset,
       formState: { errors, isDirty },
    } = useForm({
       defaultValues: {
@@ -17,6 +18,13 @@ export default () => {
          photoURL: currentUser?.photoURL || "",
       },
    });
+
+   const resetForm = (user) => {
+      reset({
+         displayName: user?.displayName || "",
+         photoURL: user?.photoURL || "",
+      });
+   };
 
    return (
       <section className="p-4 lg:p-8">
@@ -32,7 +40,9 @@ export default () => {
 
             <form
                className="w-full grid gap-y-8 sm:gap-y-12"
-               onSubmit={handleSubmit(updateUserProfile)}
+               onSubmit={handleSubmit((data) =>
+                  updateUserProfile(data, resetForm)
+               )}
             >
                <div>
                   <div>
