@@ -32,3 +32,5 @@ export { default as GolfCourse } from "./GolfCourse";
 export { default as Playground } from "./Playground";
 export { default as LogOut } from "./LogOut";
 export { default as Bookmark } from "./Bookmark";
+export { default as Terrace } from "./Terrace";
+export { default as Beach } from "./Beach";

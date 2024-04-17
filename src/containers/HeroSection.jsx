@@ -10,8 +10,8 @@ export default ({ estateSectionRef }) => {
    return (
       <Swiper
          modules={[Autoplay, Pagination]}
-         pagination
-         // autoplay
+         pagination={{ clickable: true }}
+         autoplay
          className="mt-4 lg:mt-8 w-full max-w-full max-h-[40rem] sm:max-h-[36rem] overflow-hidden rounded-md"
       >
          <SwiperSlide className="p-5 md:p-8 flex lg:grid lg:grid-cols-2 flex-col lg:flex-row gap-y-6 lg:items-center xl:flex bg-gradient-to-b from-primary-50 to-amber-50 xl:from-white xl:to-white">

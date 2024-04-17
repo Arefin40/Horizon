@@ -12,6 +12,8 @@ import {
    GolfCourse,
    Playground,
    RoomService,
+   Terrace,
+   Beach,
 } from "@icons";
 
 const facilities = {
@@ -24,6 +26,8 @@ const facilities = {
    parking: { icon: <Parking />, name: "Parking area" },
    guestroom: { icon: <Guestroom />, name: "Guestroom" },
    helipad: { icon: <Helipad />, name: "Helipad" },
+   terrace: { icon: <Terrace />, name: "Terrace" },
+   "private-beach-access": { icon: <Beach />, name: "Private Beach Access" },
    "kids-playground": { icon: <Playground />, name: "Kids playground" },
    "room-service": { icon: <RoomService />, name: "Room service" },
    "golf-course": { icon: <GolfCourse />, name: "Golf course" },

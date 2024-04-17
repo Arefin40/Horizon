@@ -11,13 +11,7 @@
       "bedrooms": 6,
       "bathrooms": 5,
       "location": "482 Northwest Ave, Brooklyn, NY",
-      "facilities": [
-         "wifi",
-         "Private Terrace",
-         "spa",
-         "Concierge Service",
-         "parking"
-      ]
+      "facilities": ["wifi", "terrace", "spa", "parking"]
    },
    {
       "id": "2",
@@ -33,7 +27,7 @@
       "location": "726 Ocean View Drive, Malibu, CA",
       "facilities": [
          "wifi",
-         "Private Beach Access",
+         "private-beach-access",
          "pool",
          "tennis",
          "outdoor-kitchen"
@@ -56,7 +50,7 @@
    {
       "id": "4",
       "estate_title": "Emerald Isle Sanctuary",
-      "image": "https://i.ibb.co/kxPS1qp/7638631066.jpg",
+      "image": "https://i.ibb.co/Pz3T31G/7638631066.jpg",
       "segment_name": "Private Island",
       "description": "Own your private slice of paradise on this pristine island retreat. Surrounded by turquoise waters and lush vegetation, experience ultimate seclusion and luxury.",
       "price": 1500000,
@@ -79,13 +73,7 @@
       "bedrooms": 15,
       "bathrooms": 10,
       "location": "621 Garden Retreat, Miami, FL",
-      "facilities": [
-         "wifi",
-         "pool",
-         "outdoor-kitchen",
-         "Gated Entry",
-         "room-service"
-      ]
+      "facilities": ["wifi", "pool", "outdoor-kitchen", "room-service"]
    },
    {
       "id": "6",
